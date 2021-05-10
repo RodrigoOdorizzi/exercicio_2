@@ -40,18 +40,17 @@ public class main {
         lisa.inserir(a);
         
         
-        
+        //para salvar em JSON
         Dados d = new DadosJSON();
-        
-        
         EmitirDados e = new EmitirDados(d);
         e.emitirsalvar(lisa.lista);
         
+        //Para salvar em CSV
          d = new DadosCSV();
            e = new EmitirDados(d);
         e.emitirsalvar(lisa.lista);
          
-        
+        //para salvar em XML
         d = new DadosXML();
         e = new EmitirDados(d);
         e.emitirsalvar(lisa.lista);
