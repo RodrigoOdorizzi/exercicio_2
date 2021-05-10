@@ -12,19 +12,23 @@ import java.util.Date;
  * @author rodri
  */
 public class Aluno extends Pessoa {
+
+    
     
     
     private int matricula;
-    private int cpf;
-    private Date danasc;
+    private String cpf;
+    private String danasc;
     private String email;
+    
     
     
     public Aluno() {
     }
 
-    
-    public Aluno(int matricula, int cpf, Date danasc, String email, String nome) {
+     
+
+    public Aluno(int matricula, String cpf, String danasc, String email, String nome) {
         super(nome);
         this.matricula = matricula;
         this.cpf = cpf;
@@ -40,19 +44,19 @@ public class Aluno extends Pessoa {
         this.matricula = matricula;
     }
 
-    public int getCpf() {
+    public String getCpf() {
         return cpf;
     }
 
-    public void setCpf(int cpf) {
+    public void setCpf(String cpf) {
         this.cpf = cpf;
     }
 
-    public Date getDanasc() {
+    public String getDanasc() {
         return danasc;
     }
 
-    public void setDanasc(Date danasc) {
+    public void setDanasc(String danasc) {
         this.danasc = danasc;
     }
 
@@ -66,7 +70,8 @@ public class Aluno extends Pessoa {
 
     @Override
     public String toString() {
-        return "Aluno{" + "matricula=" + matricula + ", cpf=" + cpf + ", danasc=" + danasc + ", email=" + email + '}';
+        return "Aluno{" + "nome=" +  super.getNome() + ", matricula=" + matricula + ", cpf=" + cpf + ", danasc=" + danasc + ", email=" + email + '}';
     }
-  
+    
+    
 }

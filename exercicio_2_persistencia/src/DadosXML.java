@@ -9,10 +9,10 @@
  * @author rodri
  */
 public class DadosXML implements Dados{
-    
+    /*
       @Override
-    public String enviar() {
+    public String salvar() {
    return "Email enviado com sucesso";
     }
-    
+    */
 }

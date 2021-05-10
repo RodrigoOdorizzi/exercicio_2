@@ -1,3 +1,7 @@
+
+import java.io.IOException;
+import java.util.ArrayList;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -10,14 +14,20 @@
  */
 public class EmitirDados {
     
-    protected Dados notificacao;
+    protected Dados dados;
     
-    public EmitirDados(Dados notificacao){
-    this.notificacao = notificacao;
+    public EmitirDados(Dados dados){
+    this.dados = dados;
     }
+
     
-    public String dispararAlerta(){
-    return this.notificacao.enviar();
     
-    }
+    
+   
+    public void emitirsalvar(ArrayList<Aluno>lista) throws IOException{
+        
+       dados.salvar(lista);
+     }
+ 
+
 }
