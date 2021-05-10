@@ -51,6 +51,10 @@ public class main {
            e = new EmitirDados(d);
         e.emitirsalvar(lisa.lista);
          
+        
+        d = new DadosXML();
+        e = new EmitirDados(d);
+        e.emitirsalvar(lisa.lista);
     }
     
 }
