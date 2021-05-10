@@ -47,7 +47,9 @@ public class main {
         EmitirDados e = new EmitirDados(d);
         e.emitirsalvar(lisa.lista);
         
-         
+         d = new DadosCSV();
+           e = new EmitirDados(d);
+        e.emitirsalvar(lisa.lista);
          
     }
     
